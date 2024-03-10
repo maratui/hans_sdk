@@ -2,6 +2,7 @@
 #define HANS_SDK_CLIENT_H_
 
 #include <iostream>
+#include <sstream>
 
 #include "hr_pro.h"
 
@@ -9,7 +10,8 @@ namespace hans_sdk {
 
 class Client {
  public:
-  Client() = default;
+  Client() = delete;
+  explicit Client(char **argv);
 
   void ConnectToHR();
   int DisconnectFromHR();
@@ -19,12 +21,13 @@ class Client {
   void ReadRobotModel();
 
  private:
+  unsigned short ArgToNumber(char *arg);
   void PrintError(const std::string &message, int ret_num) noexcept;
 
-  std::string ip_str_ = "192.168.56.10";
-  unsigned short port_num_ = 10003;
-  unsigned int box_id_ = 0;
-  unsigned int robot_id_ = 0;
+  std::string ip_str_ = "";
+  unsigned short port_num_{};
+  unsigned short box_id_{};
+  unsigned short robot_id_{};
 
   std::string ver_str_ = "";
   int cps_version_num_{};

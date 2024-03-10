@@ -2,6 +2,21 @@
 
 using namespace hans_sdk;
 
+Client::Client(char **argv) : ip_str_(argv[1]) {
+  port_num_ = ArgToNumber(argv[2]);
+  box_id_ = ArgToNumber(argv[3]);
+  robot_id_ = ArgToNumber(argv[4]);
+}
+
+unsigned short Client::ArgToNumber(char *arg) {
+  std::istringstream str_iss(arg);
+  unsigned short num{};
+
+  str_iss >> num;
+
+  return num;
+}
+
 void Client::ConnectToHR() {
   int ret_num =
       hr_pro::_Z12HRIF_ConnectjPKct(box_id_, ip_str_.c_str(), port_num_);
