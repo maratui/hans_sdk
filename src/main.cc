@@ -5,6 +5,8 @@ int main() {
 
   client.ConnectToHR();
   client.IsConnected();
+  client.ReadVersion();
+  client.ReadRobotState();
 
   return client.DisconnectFromHR();
 }
