@@ -1,5 +1,5 @@
-#ifndef _HR_PRO_H_
-#define _HR_PRO_H_
+#ifndef HANS_SDK_HR_PRO_H_
+#define HANS_SDK_HR_PRO_H_
 
 #ifdef __cplusplus
 extern "C" {
@@ -12,4 +12,4 @@ extern int _Z12HRIF_ConnectjPKct(unsigned int boxID, const char* hostName,
 }
 #endif
 
-#endif  // _HR_PRO_H_
+#endif  // HANS_SDK_HR_PRO_H_

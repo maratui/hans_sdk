@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = -Wall -Wextra -Werror -Wuninitialized
 FILES = *.h *.cc
-TARGET = hans
+TARGET = client_hr
 
 all: build
 
