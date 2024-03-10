@@ -1,9 +1,9 @@
 #include "client.h"
 
 int main() {
-  Client client;
+  hans_sdk::Client client;
 
   client.ConnectToHR();
 
-  return 0;
+  return client.DisconnectFromHR();
 }
