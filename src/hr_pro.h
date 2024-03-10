@@ -8,8 +8,9 @@ extern "C" {
 #endif
 
 extern int _Z12HRIF_ConnectjPKct(unsigned int box_id, const char* host_name,
-                                 unsigned short n_port);
+                                 unsigned short port_num);
 extern int _Z15HRIF_DisConnectj(unsigned int box_id);
+extern bool _Z16HRIF_IsConnectedj(unsigned int box_id);
 
 #ifdef __cplusplus
 }
