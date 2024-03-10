@@ -48,8 +48,6 @@ class Client {
   int is_connect_to_box_{};
   int blending_done_{};
   int inpos_{};
-
-  std::string model_str_ = "";
 };
 
 }  // namespace hans_sdk

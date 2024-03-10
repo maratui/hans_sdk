@@ -16,9 +16,6 @@ _Z16HRIF_ReadVersionjjRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERiS6_
     unsigned int boxID, unsigned int rbtID, std::string &strVer,
     int &nCPSVersion, int &nCodesysVersion, int &nBoxVerMajor, int &nBoxVerMID,
     int &nBoxVerMin, int &nAlgorithmVer, int &nElfinFirmwareVer);
-extern int
-_Z19HRIF_ReadRobotModeljRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE(
-    unsigned int boxID, unsigned int rbtID, std::string &strModel);
 extern int _Z19HRIF_ReadRobotStatejjRiS_S_S_S_S_S_S_S_S_S_S_S_(
     unsigned int boxID, unsigned int rbtID, int &nMovingState,
     int &nEnableState, int &nErrorState, int &nErrorCode, int &nErrorAxis,

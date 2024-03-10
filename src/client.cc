@@ -57,20 +57,18 @@ void Client::ReadRobotState() {
     PrintError("Error HRIF_ReadRobotState", ret_num);
   } else {
     std::cout << "HRIF_ReadRobotState:" << std::endl;
-    std::cout << "the robot type = " << moving_state_ << std::endl << std::endl;
-  }
-}
-
-void Client::ReadRobotModel() {
-  int ret_num = hr_pro::
-      _Z19HRIF_ReadRobotModeljRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE(
-          box_id_, robot_id_, model_str_);
-
-  if (ret_num != 0) {
-    PrintError("Error HRIF_ReadRobotModel", ret_num);
-  } else {
-    std::cout << "HRIF_ReadRobotModel:" << std::endl;
-    std::cout << "the robot type = " << model_str_ << std::endl << std::endl;
+    std::cout << "the exercise state = " << moving_state_ << std::endl;
+    std::cout << "the enable state = " << enable_state_ << std::endl;
+    std::cout << "the error state = " << error_state_ << std::endl;
+    std::cout << "the error code = " << error_code_ << std::endl;
+    std::cout << "the error axis = " << error_axis_ << std::endl;
+    std::cout << "the breaking = " << breaking_ << std::endl;
+    std::cout << "the emergency stop = " << emergency_stop_ << std::endl;
+    std::cout << "the safty guard = " << safty_guard_ << std::endl;
+    std::cout << "the electrify = " << electrify_ << std::endl;
+    std::cout << "is_connect to box = " << is_connect_to_box_ << std::endl;
+    std::cout << "the blending done = " << blending_done_ << std::endl;
+    std::cout << "the inpos = " << inpos_ << std::endl << std::endl;
   }
 }
 
