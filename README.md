@@ -31,3 +31,20 @@
 - Клиент разработан на языке С++ \
 Код программы находится в папке src \
 При написании кода придерживался Google Style
+
+### Результаты выполненного задания
+
+- HR = Blackout - thr electrify = 0 \
+!["images/hr_blackout"](images/hr_blackout.png)
+
+- HR = disabled - the electrify = 1; the enable state = 0 \
+!["images/hr_disabled"](images/hr_disabled.png)
+
+- HR = error - the error state = 1; the error code = 15296; the error axis = 1 \
+!["images/hr_error"](images/hr_error.png)
+
+- HR is in standby state - the enable state = 1; the exercise state = 0 \
+!["images/hr_enabled"](images/hr_enabled.png)
+
+- HR = Script running - the exercise state = 1 \
+!["images/hr_running"](images/hr_running.png)

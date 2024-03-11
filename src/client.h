@@ -18,7 +18,6 @@ class Client {
   void IsConnected();
   void ReadVersion();
   void ReadRobotState();
-  void ReadRobotModel();
 
  private:
   unsigned short ArgToNumber(char *arg);
